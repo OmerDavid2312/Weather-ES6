@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/ico" href="imgs/sunny.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3763d976d.js" crossorigin="anonymous"></script>
+
+    <title>Weather JS</title>
+</head>
+<body>
+
+  
+   <section style="height: 90vh;">
+    <nav class="navbar navbar-default bootsnav navbar-fixed white no-background">
+      <div class="text-center mx-auto">
+        <h5 id="date" class="mb-1 mt-2 text-white font-weight-bold"></h5>
+      </div>
+   </nav>
+   
+    <div class="col-xl-6 mx-auto text-center mt-5 p-5 rounded-info">
+
+        
+    <!-- Main -->
+    <h2 id="location" class="head font-weight-bold">Weather JS APP ES6</h2>
+    
+    <div id="icon" ></div>
+    <p id="description" class="font-weight-bold"></p>
+    <h1 id="temp" class="font-weight-bold"></h1>
+    
+    <button type="button" class="btn btn-dark mt-4" data-toggle="modal" data-target="#locModal">Change Location</button>
+    
+
+  </div> 
+  <div id="lastlocations" class="text-center ">
+
+  </div>
+ </section>
+
+   <!-- Forecast -->
+   <div class="container">
+    <h3 class="bold font-weight-bold text-center" style="color: #648cff;">Forecast</h3>
+    <hr style="border: 2px solid  #648cff" width="4%">
+   </div>
+  <div class="col-xl-6 mx-auto text-center  p-5 rounded-info" id="forecast">
+
+
+
+  </div>
+  
+  <div class="container">
+    <h3 class="bold font-weight-bold text-center mt-5" style="color: #648cff;">More Information</h3>
+    <hr style="border: 2px solid  #648cff" width="4%">
+   </div>
+
+  <div class="text-center mx-auto mt-3 p-3 mb-5" style="width: 50%;">
+  <div class="row mb-3">
+    
+    <div class="col-xl-4">
+      <span id="feellike"></span>
+    </div>
+    <div class="col-xl-4">
+      <span id="max"></span>
+    </div>
+    <div class="col-xl-4">
+      <span id="min"></span>
+    </div>
+
+  </div>
+  <div class="row">
+    
+    <div class="col-xl-4">
+      <span id="sun"></span>
+    </div>
+    <div class="col-xl-4">
+      <span id="moon"></span>
+    </div>
+    <div class="col-xl-4">
+      <span id="wind"></span>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Modal -->
+    <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="locModalLongTitle">Change Location</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                  <label for="city" class="font-weight-bold">City</label>
+                  <input type="text" id="city" class="form-control">
+                  <input type="hidden" id="locationinput">
+                  <div class="suggestion mt-2" id="suggestions">
+                    
+
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+              <button type="button" data-dismiss="modal" id="btn-change-location" class="btn btn-orange">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+<script src="app.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+</body>
+</html>

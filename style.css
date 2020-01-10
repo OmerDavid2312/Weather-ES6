@@ -1,0 +1,108 @@
+
+body{
+   
+
+font-family: sans-serif !important;
+font-weight: bold;
+
+
+
+}
+.lastdata{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.badge-secondary:hover{    background-color: rgb(52, 58, 64);
+}
+
+
+
+
+section{
+    background: url('imgs/homebg.png') no-repeat top center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    
+}
+span{
+    font-size: 22px;
+    font-weight: bold;
+}
+button{
+    border-radius: 40px !important;
+}
+.btn-dark{
+    border-radius: 40px !important;
+}
+.btn-orange{
+    background-color: #648cff !important;
+ 
+}
+.suggestion{
+
+    overflow-y: scroll;
+    height: 50px;
+}
+
+.suggestion > div{
+    border-top: 1px solid whitesmoke;
+}
+
+.suggestion >div:hover{
+    background-color: #648cff;
+    cursor: pointer;
+}
+
+#city{
+    border-color: #648cff !important;
+    box-shadow: 0 0 0 0.2rem #648cff;
+}
+.suggestion span{
+    display: none;
+}
+
+.rounded-info{
+    border-radius:40px !important;
+
+    
+    
+    
+}
+#forecast{
+    display: flex !important;
+    width: 100%;
+    overflow-x: auto;
+}
+.hoverspecificdate:hover{
+    transform: scale(1.05);
+    
+    transition: all 0.1s ease;
+    opacity: 1;
+}
+.hoverspecificdate{
+    transform: scale(1);
+    transition: all 0.4s ease;
+    opacity: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+ 
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(52, 58, 64);
+
+    border-radius: 10px;
+  }
+
+#suggestions::-webkit-scrollbar-thumb {
+    background-color:#648cff;
+
+    border-radius: 10px;
+  }
