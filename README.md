@@ -1,9 +1,10 @@
 # Weather-ES6
 Weather app based JavaScript ES6, JSON, OpenWeatherMap API
 <br>
-<ul>Features
+Features
+<ul>
   <li>Get current location weather</li>
-  <li>Get weather in allover the world</li>
+  <li>Get weather in all over the world</li>
   <li>AutoComplete Search</li>
 <ul>  
 <br><br>
